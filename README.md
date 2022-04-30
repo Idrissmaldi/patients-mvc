@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a>
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src=" patients.png" alt="patients" width="80" height="80">
   </a>
 
   <h3 align="center">Gestion des patients et medecins</h3>
