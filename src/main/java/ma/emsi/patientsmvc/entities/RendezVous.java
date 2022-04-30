@@ -13,6 +13,7 @@ import java.util.Date;
 public class RendezVous {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String titre;
     private Date date;
     @ManyToOne
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)

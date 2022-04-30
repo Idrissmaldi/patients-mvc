@@ -1,5 +1,6 @@
 package ma.emsi.patientsmvc.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,6 +11,7 @@ import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
+import java.util.Collection;
 import java.util.Date;
 @Entity @AllArgsConstructor @NoArgsConstructor
 @Data
@@ -25,5 +27,6 @@ public class Patient {
     private boolean malade;
     @DecimalMin("100")
     private int score;
+
 
 }

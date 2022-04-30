@@ -33,6 +33,15 @@
                     <li><a class="dropdown-item" th:href="@{/user/medecin}">Chercher</a></li>
                 </ul>
             </li>
+            <li class="nav-item dropdown" sec:authorize="hasAuthority('ADMIN')">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Rendez vous
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" th:href="@{/user/rdv}">Nouveau</a></li>
+                    <li><a class="dropdown-item" th:href="@{/user/rdv}">Chercher</a></li>
+                </ul>
+            </li>
         </ul>
         <ul class="navbar-nav" >
             <li class="nav-item dropdown" sec:authorize="isAuthenticated()">
